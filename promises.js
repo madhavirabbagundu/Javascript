@@ -9,3 +9,21 @@
 
 
 // example
+
+var promise = new Promise(function(res,rej){
+    var a = 30
+    var b = 3
+    if(a===b){
+        res()
+    }
+    else{
+        rej()
+    }
+
+})
+promise.then(function(){
+    console.log("success")
+})
+.catch(function(){
+console.log("failure")
+})
