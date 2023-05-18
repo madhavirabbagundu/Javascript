@@ -6,3 +6,21 @@
 //hoisting in javascipt is a function when a function or variable are excuted before the function excution.
 
 //promises is a object . it will handle the asynchronous operations .
+// promise is an object . it will handle the asynchronous operations. 
+var promise = new Promise(function(res,rej)  {
+    var a = 10;
+    var b = 20;
+    if(a===b){
+        res()
+    }
+    else{
+        rej()
+    }
+
+})
+promise.then(function(){
+    console.log("success")
+})
+.catch(function(){
+console.log("reject")
+})
